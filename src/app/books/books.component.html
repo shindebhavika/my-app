@@ -1,5 +1,12 @@
-<h1>books</h1>
-<li>{{name}}
-<img src="{{src}}" alt="{{name}}"></li>
-<li>{{name2}}
-  <img src="{{src2}}" alt="{{name2}}"></li>
+<h1>Books</h1>
+<button (click)="handleClick()" (mouseover)="handleClick()" [disabled]="isDisabled">books</button>
+
+
+<ul>
+  <li>{{ name }}
+    <img [src]="src" [alt]="name" />
+  </li>
+  <li>{{ name2 }}
+    <img [src]="src2" [alt]="name2" />
+  </li>
+</ul>
