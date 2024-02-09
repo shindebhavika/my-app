@@ -1,6 +1,7 @@
 <h1>Books</h1>
-<button (click)="handleClick()" (mouseover)="handleClick()" [disabled]="isDisabled">books</button>
-
+<button (click)="handleClick()" [disabled]="isDisabled">books</button>
+<input type="text" [(ngModel)]="myName">
+<p>{{myName}}</p>
 
 <ul>
   <li>{{ name }}
