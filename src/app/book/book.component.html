@@ -1,0 +1,13 @@
+
+  <li class="book-item">
+    <div class="book-info">
+  
+      <h2 class="title">{{ book.name | titlecase }}</h2>
+      <img class="book-image" [src]="book.src" [alt]="book.name" />
+    </div>
+  
+    <h1 class="amount">{{ book.amount | currency: 'INR' }}</h1>
+  <button (click)="addToCart()">add to cart</button>
+  </li>
+
+
