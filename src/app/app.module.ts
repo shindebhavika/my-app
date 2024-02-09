@@ -1,13 +1,15 @@
-// Import necessary modules and components
+// app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { BooksComponent } from './books/books.component';
-import { BookComponent } from './book/book.component'; // Import BookComponent
+
+import { FormsModule } from '@angular/forms';
+import { BooksModule } from './books/books.module';
 
 @NgModule({
-  declarations: [AppComponent, BooksComponent, BookComponent], // Include BookComponent in declarations
-  imports: [BrowserModule],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  imports: [BrowserModule,  FormsModule,BooksModule],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
+

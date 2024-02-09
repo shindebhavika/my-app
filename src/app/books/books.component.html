@@ -1,6 +1,6 @@
 <h1>Hello Angular!</h1>
 <ul *ngIf="isShowing" class="book-list ">
   <ng-container *ngFor="let singleBook of books; let i = index">
-    <app-book [book]="singleBook"></app-book>
+    <app-book (bookEmitter)="addTo($event)" [book]="singleBook"></app-book>
   </ng-container>
 </ul>
